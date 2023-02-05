@@ -41,18 +41,18 @@
 # 60 -> 10  40  10
 
 
-# sum = int(input('Enter the total number of origami cranes: '))
-# print(f'Total number of origami cranes is - {sum}')
+sum = int(input('Enter the total number of origami cranes: '))
+print(f'Total number of origami cranes is - {sum}')
 
-# div_sum = int(sum / 3)
+div_sum = int(sum / 3)
 
-# k = int(div_sum * 2)
+k = int(div_sum * 2)
 
-# p = int(k / 4)
+p = int(k / 4)
 
-# s = int(k / 4)
+s = int(k / 4)
 
-# print (f'Katya made {k} cranes. Petya - {p} and Serezha - {s}')
+print (f'Katya made {k} cranes. Petya - {p} and Serezha - {s}')
 
 
 
@@ -119,12 +119,12 @@
 # 3 2 1 -> no
 
 
-n = int(input('Введите длину шоколадки: '))
-m = int(input('Введите ширину шоколадки: '))
-k = int(input('Введите количество долек, которые необходимо получить, после разлома шоколадки: '))
+# n = int(input('Введите длину шоколадки: '))
+# m = int(input('Введите ширину шоколадки: '))
+# k = int(input('Введите количество долек, которые необходимо получить, после разлома шоколадки: '))
 
-piece = (((n * m) - k) % 2)
-if  piece == 0:
-    print('Да, получится')
-else:
-    print('Нет, не получится')
+# piece = (((n * m) - k) % 2)
+# if  piece == 0:
+#     print('Да, получится')
+# else:
+#     print('Нет, не получится')
