@@ -23,5 +23,3 @@ if x >= len(array):
     print(x-1)
 else:
     print((x+1), (x-1))
-
-

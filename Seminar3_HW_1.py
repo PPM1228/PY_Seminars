@@ -19,5 +19,3 @@ print(f'Ваш массив - {array}')
 
 x = int(input('Какое число Вы бы хотели найти в массиве? '))
 print(array.count(x))
-
-
