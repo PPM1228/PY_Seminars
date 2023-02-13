@@ -26,3 +26,4 @@ print(list_2)
 
 unity = (set(list_1).intersection(set(list_2)))
 print(f"Числа, которые встречаются в обоих наборах: {unity}")
+
