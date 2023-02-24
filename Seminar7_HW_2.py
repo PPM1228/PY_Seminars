@@ -15,7 +15,7 @@
 # 2 4 6 8 10 12
 # 3 6 9 12 15 18
 # 4 8 12 16 20 24
-# 5 10 15 20 25 30
+# 5 10 15 20 25 30 
 # 6 12 18 24 30 36
 
 def print_operation_table(production, num_rows=6, num_columns=6):
