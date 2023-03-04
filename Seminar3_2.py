@@ -5,28 +5,23 @@
 # k = 3
 # -> [3, 4, 5, 1, 2]
 
-start_list = [1, 2, 3, 4, 5]
-k = int(input('Enter your number: '))
-
-for 
-
 
 
 
     # Второй вариант решения
 
 
-# staert_list = [1, 2, 3, 4, 5]
-# num=50
-# k = num%len(staert_list)
-# staert_list_temp = [0]*len(staert_list)
+staert_list = [1, 2, 3, 4, 5]
+num=50
+k = num%len(staert_list)
+staert_list_temp = [0]*len(staert_list)
 
-# for i in range(len(staert_list)):
-#     if (i+k)>= len(staert_list): 
-#         staert_list_temp[i+k -len(staert_list)]= staert_list[i]
-#     else: 
-#         staert_list_temp[i+k] = staert_list[i]
-# print(staert_list_temp)
+for i in range(len(staert_list)):
+    if (i+k)>= len(staert_list): 
+        staert_list_temp[i+k -len(staert_list)]= staert_list[i]
+    else: 
+        staert_list_temp[i+k] = staert_list[i]
+print(staert_list_temp)
 
 
 

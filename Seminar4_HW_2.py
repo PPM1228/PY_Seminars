@@ -16,6 +16,26 @@
 # 9
 
 
+# garden = []
+# n = int(input("Введите количество кустов: "))
+# for berries in range(n):
+#     berries = int(input("Введите количество ягод на кусте: "))
+#     garden.append(berries)
+# print(f"Кусты с ягодами: {garden}")
+
+# max_berries = 0
+# for berries in range(0, n):
+#     if berries == n - 1:
+#         berries_count = garden[berries] + garden[berries-1] + garden[0]
+#         max_berries = max(berries_count, max_berries)
+#     else:
+#         berries_count = garden[berries] + garden[berries-1] + garden[berries+1]
+#         max_berries = max(berries_count, max_berries)
+# print(f"Максимальное количество ягод, которое может собрать сборщик - {max_berries}")
+
+
+#   Второе решение
+
 garden = []
 n = int(input("Введите количество кустов: "))
 for berries in range(n):
@@ -23,12 +43,14 @@ for berries in range(n):
     garden.append(berries)
 print(f"Кусты с ягодами: {garden}")
 
-max_berries = 0
-for berries in range(0, n):
-    if berries == n - 1:
-        berries_count = garden[berries] + garden[berries-1] + garden[0]
-        max_berries = max(berries_count, max_berries)
-    else:
-        berries_count = garden[berries] + garden[berries-1] + garden[berries+1]
-        max_berries = max(berries_count, max_berries)
-print(f"Максимальное количество ягод, которое может собрать сборщик - {max_berries}")
+
+sum_garden = []
+max_berries = garden[0] + garden[-1] + garden[-2]
+temp_max_berries = 0
+for i in range(0, n-1):
+    berries_count = garden[i] + garden[i-1] + garden[i+1]
+    temp_max_berries = berries_count
+    if temp_max_berries > max_berries:
+        max_berries = temp_max_berries
+    sum_garden.append(max_berries)
+print(max_berries)

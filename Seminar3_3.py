@@ -37,6 +37,6 @@ print(len(set(my_dict.values())))
 #     list.append(d.get(i))
 #     i += 1
 
-list_1 = d.values()
+# list_1 = d.values()
 
-print(len(set(list_1)))
+# print(len(set(list_1)))

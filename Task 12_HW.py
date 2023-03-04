@@ -16,17 +16,22 @@
 
 s = int(input('Сумма этих чисел равна: '))
 p = int(input('Произведение этих числе равно: '))
-scount = 0
-pcount = 1
+x = 0
+y = 0
 if s == 2 and p == 2:
     print("В уме такое посчитай")
 else: 
-    while scount + pcount != s:
-        scount += 1
-        while pcount * 2 != p:
-            pcount += 1
-    print (f'Первое число - это {scount}, а второе число - это {pcount}')
-
+    for x in range(1001):
+        for y in range(1001):
+            if s == x + y and p == x * y:
+                print(f"Число Х = {x}, число Y = {y}") 
+   
+   
+    # while scount + pcount != s:
+    #     scount += 1
+    #     while pcount * 2 != p:
+    #         pcount += 1
+    # print (f'Первое число - это {scount}, а второе число - это {pcount}')
 
 
 
